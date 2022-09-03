@@ -1,4 +1,5 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
+      css/flatly.css: {}
+#      css/style.css: {}
