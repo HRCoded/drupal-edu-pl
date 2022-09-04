@@ -69,3 +69,6 @@ yarn-error.log
 /web.config
 /.editorconfig
 /.gitattributes
+
+# Ignore other files/directories
+/scratch
