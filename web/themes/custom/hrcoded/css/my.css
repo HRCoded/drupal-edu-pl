@@ -11931,4 +11931,43 @@ div.badge.hrc-category-badge {
   color: #7b8a8b;
 }
 
+.hrc-article h1, .hrc-article .h1,
+.hrc-article h2,
+.hrc-article .h2,
+.hrc-article h3,
+.hrc-article .h3,
+.hrc-article h4,
+.hrc-article .h4,
+.hrc-article h5,
+.hrc-article .h5,
+.hrc-article h6,
+.hrc-article .h6,
+.hrc-article ul,
+.hrc-article a,
+.hrc-article p {
+  font-family: Merriweather, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.hrc-article pre {
+  border-radius: 10px;
+}
+
+.hrc-caption {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.083em;
+}
+
+.hrc-pill {
+  border: 1px solid #ced4da;
+  color: #7b8a8b;
+  padding: 6px 16px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+}
+.hrc-pill:hover {
+  color: #7b8a8b;
+}
+
 /*# sourceMappingURL=my.css.map */

@@ -77,3 +77,45 @@ div.badge.hrc-category-badge {
   line-height: 20px;
   color: $gray-700;
 }
+
+.hrc-article {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  a,
+  p {
+    font-family: $font-family-sans-serif-2;
+  }
+
+  pre {
+    border-radius: 10px;
+  }
+}
+
+.hrc-article-header {
+  //background: #ffc018;
+}
+
+.hrc-caption {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.083em;
+}
+
+.hrc-pill {
+  border: 1px solid $gray-400;
+  color: $gray-700;
+  padding: 6px 16px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+
+  &:hover {
+    color: $gray-700;
+  }
+}
