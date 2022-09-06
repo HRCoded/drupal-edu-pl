@@ -1,9 +1,16 @@
-<div class="card mb-4">
-  {{ content.field_image }}
-  <div class="card-body">
-    <div class="small text-muted">{{ date }}</div>
-    <h2 class="card-title h4">{{ label }}</h2>
-    <p class="card-text">{{ content.body }}</p>
-    <a class="btn btn-primary" href="{{ url }}">Read more →</a>
+<div class="hrc-card">
+  <div class="hrc-card-content-wrapper">
+    <a class="hrc-card-content" href="{{ url }}">
+      <h4 class="hrc-card-title mb-2">{{ label }}</h4>
+      <div class="hrc-card-text">{{ content.body }}</div>
+    </a>
+    <div class="hrc-card-meta mt-2">
+      {{ node.getCreatedTime()|format_date('olivero_medium') }}
+      <span class="d-inline-block px-1">&middot;</span>
+      {{ content.field_category }}
+    </div>
+  </div>
+  <div class="hrc-card-image">
+    {{ content.field_image }}
   </div>
 </div>

@@ -37,9 +37,8 @@
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
   'py-5',
-  'bg-light',
-  'border-bottom',
-  'mb-4'
+  'bg-primary',
+  'hrc-border-bottom'
 ]
 %}
 <div{{ attributes.addClass(classes) }}>
@@ -47,9 +46,18 @@
   {{ title_suffix }}
 
   <div class="container">
-    <div class="text-center my-5">
-      <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-      <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="my-5 text-dark">
+          <h1 class="hrc-frontpage-header">Learn modern and solid web development</h1>
+          <p class="lead mb-0 hrc-frontpage-subheader">PHP, Drupal, Symfony and more!</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+
+      </div>
     </div>
+
   </div>
 </div>
