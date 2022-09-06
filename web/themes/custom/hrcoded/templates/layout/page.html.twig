@@ -43,10 +43,10 @@
  */
 #}
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary hrc-border-bottom">
   <div class="container">
-    <a class="navbar-brand" href="{{ path('<front>') }}">
-      <img height="40" src="{{ directory ~ '/assets/logo-dark.svg' }}"  alt="HRCoded logo">
+    <a href="{{ path('<front>') }}">
+      <img height="40" src="{{ '/' ~ directory ~ '/assets/logo-dark.svg' }}"  alt="HRCoded logo">
     </a>
 
     {{ page.nav_main }}
@@ -59,7 +59,7 @@
   </header>
 {% endif %}
 
-<div class="container">
+<div class="container my-5">
   <div class="row">
     <div class="col-lg-8">
       {{ page.content }}

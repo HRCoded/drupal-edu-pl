@@ -1,0 +1,79 @@
+.hrc-border-bottom {
+  border-bottom: 1px solid $black;
+}
+
+.hrc-frontpage-header {
+  font-weight: bold;
+  font-family: $font-family-sans-serif-2;
+}
+
+.hrc-frontpage-subheader {
+  font-weight: normal;
+}
+
+.hrc-article-list {
+  .hrc-article-teaser:last-child .hrc-card {
+    margin-bottom: 0;
+  }
+}
+
+.hrc-card {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 60px;
+
+  &-content-wrapper {
+    margin-right: 20px;
+  }
+
+  &-meta {
+    color: $gray-700;
+    font-size: 13px;
+  }
+
+  &-content {
+    text-decoration: none;
+    display: block;
+    color: $black;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &-text {
+    color: $gray-700;
+
+  }
+
+  &-title {
+    font-weight: $font-weight-bold;
+    color: $black;
+  }
+
+  &-image {
+    // add breakpoints for mobile
+
+    .img-fluid {
+      height: 134px;
+      max-width: initial;
+    }
+  }
+}
+
+
+div.badge.hrc-category-badge {
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: $gray-700;
+}
