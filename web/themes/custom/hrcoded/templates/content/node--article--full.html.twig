@@ -67,6 +67,7 @@
  *
  */
 #}
+{{ attach_library('hrcoded/highlightjs') }}
 {%
   set classes = [
   'node',
@@ -75,17 +76,23 @@
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'hrc-article',
 ]
 %}
 <article{{ attributes.addClass(classes) }}>
+  <div class="hrc-article-header py-5">
+    <h1{{ title_attributes.addClass('mb-2') }}>
+      {{ label }}
+    </h1>
+    <p>
+      {{ node.getCreatedTime()|format_date('olivero_medium') }}
+      <span class="d-inline-block px-1">&middot;</span>
+      {{ content.field_category }}
 
-  {{ content.field_image }}
+    </p>
+    {{ content.field_tags }}
 
-  {{ content.field_tags }}
-
-  <h1{{ title_attributes }}>
-    {{ label }}
-  </h1>
+  </div>
 
 
   <div{{ content_attributes }}>

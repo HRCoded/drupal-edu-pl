@@ -60,13 +60,16 @@
 {% endif %}
 
 <div class="container my-5">
-  <div class="row">
+  <div class="row{{ not page.sidebar ? ' justify-content-center' }}">
     <div class="col-lg-8">
       {{ page.content }}
     </div>
-    <div class="col-lg-4">
-      {{ page.sidebar }}
-    </div>
+    {% if page.sidebar %}
+      <div class="col-lg-4">
+        {{ page.sidebar }}
+      </div>
+    {% endif %}
+
   </div>
 </div>
 

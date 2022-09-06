@@ -38,7 +38,5 @@
  */
 #}
 {% for item in items %}
-  <div class="d-inline-block badge bg-light hrc-category-badge">
-    {{ item.content }}
-  </div>
+  <div{{ attributes }}>{{ item.content }}</div>
 {% endfor %}
