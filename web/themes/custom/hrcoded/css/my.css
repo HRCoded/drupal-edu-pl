@@ -11896,6 +11896,7 @@ code {
 .hrc-card-meta {
   color: #7b8a8b;
   font-size: 13px;
+  font-weight: 300;
 }
 .hrc-card-content {
   text-decoration: none;
@@ -11909,6 +11910,7 @@ code {
 }
 .hrc-card-text {
   color: #7b8a8b;
+  font-weight: 300;
 }
 .hrc-card-title {
   font-weight: 700;

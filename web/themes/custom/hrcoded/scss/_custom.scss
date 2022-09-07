@@ -21,6 +21,7 @@
   &-meta {
     color: $gray-700;
     font-size: 13px;
+    font-weight: 300;
   }
 
   &-content {
@@ -38,7 +39,7 @@
 
   &-text {
     color: $gray-700;
-
+    font-weight: 300;
   }
 
   &-title {
@@ -47,8 +48,6 @@
   }
 
   &-image {
-    // add breakpoints for mobile
-
     .img-fluid {
       height: 134px;
       max-width: initial;
