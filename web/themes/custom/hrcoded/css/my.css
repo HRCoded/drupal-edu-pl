@@ -11871,17 +11871,8 @@ code {
   border-bottom: 1px solid #000;
 }
 
-.hrc-frontpage-header {
-  font-weight: bold;
+.hrc-font-family-2 {
   font-family: Merriweather, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.hrc-frontpage-subheader {
-  font-weight: normal;
-}
-
-.hrc-article-list .hrc-article-teaser:last-child .hrc-card {
-  margin-bottom: 0;
 }
 
 .hrc-card {
@@ -11890,7 +11881,7 @@ code {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .hrc-card-content-wrapper {
   margin-right: 20px;
@@ -11902,7 +11893,6 @@ code {
 .hrc-card-content {
   text-decoration: none;
   display: block;
-  color: #000;
 }
 .hrc-card-content:hover {
   color: #000;
@@ -11915,7 +11905,7 @@ code {
 }
 .hrc-card-title {
   font-weight: 700;
-  color: #000;
+  color: #212529;
 }
 .hrc-card-image .img-fluid {
   height: 134px;
@@ -11947,6 +11937,10 @@ div.badge.hrc-category-badge {
 .hrc-article p {
   font-family: Merriweather, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+.hrc-article p,
+.hrc-article li {
+  line-height: 1.8;
+}
 .hrc-article pre {
   border-radius: 10px;
 }
@@ -11968,6 +11962,10 @@ div.badge.hrc-category-badge {
 }
 .hrc-pill:hover {
   color: #7b8a8b;
+}
+
+.hrc-tag {
+  color: #95a5a6;
 }
 
 /*# sourceMappingURL=my.css.map */

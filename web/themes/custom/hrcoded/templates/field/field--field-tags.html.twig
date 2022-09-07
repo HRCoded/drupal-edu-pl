@@ -44,13 +44,15 @@
   'field--type-' ~ field_type|clean_class,
   'field--label-' ~ label_display,
   label_display == 'inline' ? 'clearfix',
-  'badge',
-  'bg-secondary'
+  'd-inline-block',
+  'hrc-tag',
+  'mb-2',
+  'me-1',
 ]
 %}
 
 {% for item in items %}
   <div{{ attributes.addClass(classes) }}>
-    {{ item.content }}
+    #{{- item.content }}
   </div>
 {% endfor %}
