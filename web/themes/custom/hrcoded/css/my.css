@@ -11954,6 +11954,10 @@ div.badge.hrc-category-badge {
   border-radius: 10px;
 }
 
+.hrc-article-header {
+  font-weight: 300;
+}
+
 .hrc-caption {
   text-transform: uppercase;
   font-size: 12px;
