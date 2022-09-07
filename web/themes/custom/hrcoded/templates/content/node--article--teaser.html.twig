@@ -7,6 +7,8 @@
     <div class="hrc-card-meta mt-2">
       {{ node.getCreatedTime()|format_date('olivero_medium') }}
       <span class="d-inline-block px-1">&middot;</span>
+      <span class="d-inline-block">{{ content.reading_time -}}{{ 'min'|t }}</span>
+      <span class="d-inline-block px-1">&middot;</span>
       {{ content.field_category }}
     </div>
   </div>
