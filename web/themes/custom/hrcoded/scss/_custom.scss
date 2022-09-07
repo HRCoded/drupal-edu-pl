@@ -2,19 +2,8 @@
   border-bottom: 1px solid $black;
 }
 
-.hrc-frontpage-header {
-  font-weight: bold;
+.hrc-font-family-2 {
   font-family: $font-family-sans-serif-2;
-}
-
-.hrc-frontpage-subheader {
-  font-weight: normal;
-}
-
-.hrc-article-list {
-  .hrc-article-teaser:last-child .hrc-card {
-    margin-bottom: 0;
-  }
 }
 
 .hrc-card {
@@ -23,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
   &-content-wrapper {
     margin-right: 20px;
@@ -37,7 +26,6 @@
   &-content {
     text-decoration: none;
     display: block;
-    color: $black;
 
     &:hover {
       color: $black;
@@ -55,7 +43,7 @@
 
   &-title {
     font-weight: $font-weight-bold;
-    color: $black;
+    color: $body-color;
   }
 
   &-image {
@@ -91,9 +79,15 @@ div.badge.hrc-category-badge {
     font-family: $font-family-sans-serif-2;
   }
 
+  p,
+  li {
+    line-height: 1.8;
+  }
+
   pre {
     border-radius: 10px;
   }
+
 }
 
 .hrc-article-header {
@@ -118,4 +112,8 @@ div.badge.hrc-category-badge {
   &:hover {
     color: $gray-700;
   }
+}
+
+.hrc-tag {
+  color: $gray-600;
 }
