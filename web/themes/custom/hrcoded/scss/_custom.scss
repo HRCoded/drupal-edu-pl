@@ -117,3 +117,31 @@ div.badge.hrc-category-badge {
 .hrc-tag {
   color: $gray-600;
 }
+
+.hrc-author {
+  &-image-wrapper {
+    margin-right: 20px;
+  }
+
+  &-name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &-position {
+    color: $gray-700;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  &-bio,
+  &-bio p {
+    font-family: $font-family-sans-serif;
+    line-height: 1.4;
+  }
+
+  img {
+    border-radius: 50%;
+    min-width: 150px;
+  }
+}

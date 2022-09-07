@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ */
+#}
+{%
+ set classes = [
+  'border-top',
+  'py-5',
+  'mt-5',
+  'hrc-author',
+]
+%}
+
+
+<section{{ attributes.addClass(classes) }}>
+  <h3 class="mb-4">{{ 'About author'|t }}</h3>
+
+  <div class="d-flex align-items-center">
+    <div class="hrc-author-image-wrapper">
+      {{ content.user_picture }}
+    </div>
+
+    <div class="hrc-author-content-wrapper">
+      <div class="hrc-author-name">
+        {{ content.field_name }}
+      </div>
+
+      <div class="hrc-author-position my-1">
+        {{ content.field_position }}
+      </div>
+
+      <div class="hrc-author-bio">
+        {{ content.field_bio }}
+      </div>
+    </div>
+  </div>
+
+</section>
