@@ -89,6 +89,8 @@
     <div>
       <div class="d-inline-block">{{ node.getCreatedTime()|format_date('olivero_medium') }}</div>
       <div class="d-inline-block px-1">&middot;</div>
+      <div class="d-inline-block">{{ content.reading_time -}}{{ 'min'|t }}</div>
+      <div class="d-inline-block px-1">&middot;</div>
       <div class="d-inline-block">{{ content.field_category }}</div>
     </div>
   </div>
