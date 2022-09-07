@@ -4,3 +4,12 @@
  * @file
  * HRcoded theme file.
  */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function hrcoded_theme_suggestions_user_alter(&$suggestions, array $variables) {
+  $suggestions[] = 'user__' . $variables['elements']['#view_mode'];
+
+  return $suggestions;
+}
