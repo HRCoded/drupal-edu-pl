@@ -13,3 +13,16 @@ function hrcoded_theme_suggestions_user_alter(&$suggestions, array $variables) {
 
   return $suggestions;
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function hrcoded_theme_suggestions_block_alter(&$suggestions, array $variables) {
+  /** @var \Drupal\block_content\Entity\BlockContent $block_content */
+  $block_content = $variables['elements']['content']['#block_content'] ?? null;
+  if ($block_content) {
+    $suggestions[] = 'block__' . $block_content->bundle();
+  }
+
+  return $suggestions;
+}
