@@ -48,15 +48,14 @@
     <div class="row align-items-center">
       <div class="col-lg-6 col-xl-7">
         <div class="text-dark my-6">
-          <h1 class="fw-bold hrc-font-family-2">Learn modern and solid web development</h1>
-          <p class="lead mb-0 fw-normal">PHP, Drupal, Symfony and more!</p>
+          <h1 class="fw-bold hrc-font-family-2">{{ content.field_title.0 }}</h1>
+          <p class="lead mb-0 fw-normal">{{ content.field_subtitle.0 }}</p>
         </div>
       </div>
 
       <div class="col-lg-6 col-xl-5 d-none d-lg-block">
-        <img height="500" src="{{ '/' ~ directory ~ '/assets/banner-image.png' }}" alt="Banner image">
+        {{ content.field_image }}
       </div>
     </div>
-
   </div>
 </div>
