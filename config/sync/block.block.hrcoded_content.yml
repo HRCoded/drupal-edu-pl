@@ -1,0 +1,22 @@
+uuid: bff362f1-1646-4a19-a297-10699d05961d
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hrcoded
+_core:
+  default_config_hash: FAHL5Nh8Yd0hvr3Bv9fzVi2WCREHhCoBXZR1YaHxdmA
+id: hrcoded_content
+theme: hrcoded
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Zawartość główna'
+  label_display: '0'
+  provider: system
+visibility: {  }

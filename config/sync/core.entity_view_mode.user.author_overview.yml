@@ -1,0 +1,10 @@
+uuid: c87e2820-302b-437c-83ab-e46c4795ca27
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.author_overview
+label: 'Author overview'
+targetEntityType: user
+cache: true

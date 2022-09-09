@@ -1,0 +1,8 @@
+uuid: 3a8957d8-c442-452f-acc7-378d7e5ff59d
+langcode: pl
+status: true
+dependencies: {  }
+id: image_jumbotron
+label: 'Image jumbotron'
+revision: 0
+description: ''

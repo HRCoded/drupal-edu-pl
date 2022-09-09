@@ -1,0 +1,27 @@
+uuid: e7e9fbe9-b355-4611-9cf1-9b6b106fa6f2
+langcode: pl
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - hrcoded
+_core:
+  default_config_hash: QJXDdZQKP9fSiOP6IeK2eNfkVXXVCzXNMwhQK0JOjdI
+id: hrcoded_footer
+theme: hrcoded
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Stopka
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

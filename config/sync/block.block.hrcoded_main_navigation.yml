@@ -1,0 +1,27 @@
+uuid: 4d4a269b-f7b3-4b04-8fb8-1a35947eee53
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - hrcoded
+_core:
+  default_config_hash: NuZ3iuGVnL2XxL3iwxht6TrBXBBMaumrszdeJ6yHv8g
+id: hrcoded_main_navigation
+theme: hrcoded
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Główna nawigacja'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

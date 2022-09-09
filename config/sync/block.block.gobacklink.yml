@@ -1,0 +1,33 @@
+uuid: ce030be1-c6b2-4b5a-9838-2dca5cc3a921
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d2506e65-a245-4424-9afa-5b36359b093b'
+  module:
+    - block_content
+    - node
+  theme:
+    - hrcoded
+id: gobacklink
+theme: hrcoded
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:d2506e65-a245-4424-9afa-5b36359b093b'
+settings:
+  id: 'block_content:d2506e65-a245-4424-9afa-5b36359b093b'
+  label: 'Go back link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

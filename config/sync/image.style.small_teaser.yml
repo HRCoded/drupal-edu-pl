@@ -1,0 +1,15 @@
+uuid: 952fd85f-f7c1-433b-8b8f-c62ee403b9c1
+langcode: en
+status: true
+dependencies: {  }
+name: small_teaser
+label: 'Small teaser (200x134)'
+effects:
+  31a7db5a-51f9-4884-85b4-1080bea1d7f6:
+    uuid: 31a7db5a-51f9-4884-85b4-1080bea1d7f6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 134
+      anchor: center-center

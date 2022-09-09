@@ -1,0 +1,27 @@
+uuid: d16c5276-2147-4741-b4fa-61fbad7586ae
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - hrcoded
+id: tytulstrony
+theme: hrcoded
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Tytuł strony'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

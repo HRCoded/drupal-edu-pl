@@ -1,0 +1,29 @@
+uuid: d5c4e6f7-fd42-44a0-aa8d-e5b6b74a7721
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.tags_sidebar
+  module:
+    - system
+    - views
+  theme:
+    - hrcoded
+id: views_block__tags_sidebar_block_1
+theme: hrcoded
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:tags_sidebar-block_1'
+settings:
+  id: 'views_block:tags_sidebar-block_1'
+  label: Tagi
+  label_display: visible
+  provider: views
+  views_label: Tagi
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
