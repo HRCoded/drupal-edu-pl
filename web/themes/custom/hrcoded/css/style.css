@@ -11935,6 +11935,9 @@ div.badge.hrc-category-badge {
   color: #7b8a8b;
 }
 
+.hrc-article {
+  overflow: hidden;
+}
 .hrc-article h1, .hrc-article .h1,
 .hrc-article h2,
 .hrc-article .h2,
@@ -12004,7 +12007,7 @@ div.badge.hrc-category-badge {
 }
 .hrc-author img {
   border-radius: 50%;
-  min-width: 150px;
+  max-width: 150px;
 }
 
 .fs-10 {

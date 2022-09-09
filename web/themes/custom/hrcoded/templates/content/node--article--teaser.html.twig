@@ -2,7 +2,7 @@
   <div class="hrc-card-content-wrapper">
     <a class="hrc-card-content" href="{{ url }}">
       <h4 class="hrc-card-title mb-2">{{ label }}</h4>
-      <div class="hrc-card-text">{{ content.body }}</div>
+      <div class="hrc-card-text d-none d-xl-block">{{ content.body }}</div>
     </a>
     <div class="hrc-card-meta mt-2">
       {{ node.getCreatedTime()|format_date('olivero_medium') }}
