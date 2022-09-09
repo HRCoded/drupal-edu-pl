@@ -11874,6 +11874,11 @@ code {
   padding: 0;
 }
 
+.my-6 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
 .hrc-border-bottom {
   border-bottom: 1px solid #000;
 }
@@ -12000,11 +12005,6 @@ div.badge.hrc-category-badge {
 .hrc-author img {
   border-radius: 50%;
   min-width: 150px;
-}
-
-.my-6 {
-  margin-top: 6rem !important;
-  margin-bottom: 6rem !important;
 }
 
 /*# sourceMappingURL=my.css.map */
