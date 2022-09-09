@@ -1,5 +1,5 @@
-uuid: c93734af-20ce-4cbe-9d26-503ef63f3d6b
-langcode: en
+uuid: a844aca4-98c3-4d51-9c08-1f90c5a40729
+langcode: pl
 status: true
 dependencies:
   config:
@@ -50,9 +50,7 @@ settings:
           items:
             - ShowBlocks
             - Source
-  plugins:
-    stylescombo:
-      styles: ''
+  plugins: {  }
 image_upload:
   status: true
   scheme: public

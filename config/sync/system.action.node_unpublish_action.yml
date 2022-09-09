@@ -1,5 +1,5 @@
-uuid: 354cd92a-1567-48eb-ab11-4174d715bd8e
-langcode: en
+uuid: 629a68b5-08d7-4a47-bc5e-2f9dad064ad8
+langcode: pl
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: C7X8h9FWlwkQ9y5mnU2JzgaZICAdc6HFbPVbhvjlAYE
 id: node_unpublish_action
-label: 'Unpublish content'
+label: 'Zakończ publikację wpisów'
 type: node
 plugin: 'entity:unpublish_action:node'
 configuration: {  }

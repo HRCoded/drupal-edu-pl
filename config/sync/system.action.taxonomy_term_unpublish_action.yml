@@ -1,5 +1,5 @@
-uuid: 77537b17-00bc-45f4-8dd6-0a7db98e3d54
-langcode: en
+uuid: 8d6e6da9-4e40-4786-a15e-6b1488f8d8e6
+langcode: pl
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: z2sNRM3ECa7FPCGnSNje_9SmZJQgwhD_6fG_L4Mr8zI
 id: taxonomy_term_unpublish_action
-label: 'Unpublish taxonomy term'
+label: 'Wstrzymaj publikację terminu taksonomii'
 type: taxonomy_term
 plugin: 'entity:unpublish_action:taxonomy_term'
 configuration: {  }

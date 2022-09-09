@@ -1,5 +1,5 @@
-uuid: a6acb935-4dff-421d-8fbc-f3a2c6f10c58
-langcode: en
+uuid: 83f3105a-f853-4ca7-acae-279b935cad4b
+langcode: pl
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: 'Menu stopki'
   label_display: '0'
   provider: system
   level: 1

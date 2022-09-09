@@ -1,5 +1,5 @@
-uuid: 076800a3-98b5-4c04-a94e-ab996dee59c9
-langcode: en
+uuid: 8900cd13-bffa-4ead-8a99-3bc927028174
+langcode: pl
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: block_content.basic.body
 field_name: body
 entity_type: block_content
 bundle: basic
-label: Body
+label: Treść
 description: ''
 required: false
 translatable: true

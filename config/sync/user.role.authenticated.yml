@@ -1,5 +1,5 @@
-uuid: 735a22ed-77ef-435a-b886-acf0b8ab0e92
-langcode: en
+uuid: f70c4364-05d3-4a56-b834-ade4bdef5ada
+langcode: pl
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'Authenticated user'
+label: 'Użytkownik uwierzytelniony'
 weight: 1
 is_admin: false
 permissions:

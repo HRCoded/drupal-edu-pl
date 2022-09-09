@@ -1,6 +1,6 @@
-uuid: bfaf34bb-cd32-4895-877e-b222caeb9a06
-langcode: en
-status: true
+uuid: a22a8384-a88f-49b7-a819-7f612855e8d9
+langcode: pl
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -11,16 +11,16 @@ dependencies:
 _core:
   default_config_hash: XEFoA1ECJzKZN4VpnDqqRQO-oltuYdmjjvGEYDKs8uU
 id: frontpage
-label: Frontpage
+label: 'Strona główna'
 module: node
-description: 'All content promoted to the front page.'
+description: 'Wszystkie treści promowane na stronie głównej.'
 tag: default
 base_table: node_field_data
 base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Domyślny
     display_plugin: default
     position: 0
     display_options:
@@ -34,29 +34,29 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementów na stronę'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Wszystko -'
             offset: false
-            offset_label: Offset
+            offset_label: Przesunięcie
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Zastosuj
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
       access:
         type: perm
         options:
@@ -75,7 +75,7 @@ display:
           plugin_id: text_custom
           label: ''
           empty: true
-          content: 'No front page content has been created yet.<br/>Follow the <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">User Guide</a> to start building your site.'
+          content: 'Nie utworzono jeszcze zawartości strony głównej. <br />Postępuj zgodnie z <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Podręcznikiem Użytkownika</a> aby rozpocząć budowę swojej witryny.'
           tokenize: false
         node_listing_empty:
           id: node_listing_empty
@@ -261,7 +261,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: Feed
+    display_title: Zasób
     display_plugin: feed
     position: 2
     display_options:
@@ -296,7 +296,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Strona
     display_plugin: page
     position: 1
     display_options:

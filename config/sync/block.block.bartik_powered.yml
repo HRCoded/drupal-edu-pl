@@ -1,5 +1,5 @@
-uuid: 7006ed9b-f9c9-4466-a0b8-c658c91c4973
-langcode: en
+uuid: 6ca2f203-6edc-4e73-bb4d-b7b912c97c39
+langcode: pl
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
-  label: 'Powered by Drupal'
+  label: 'Witrynę napędza Drupal'
   label_display: '0'
   provider: system
 visibility: {  }

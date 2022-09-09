@@ -1,5 +1,5 @@
-uuid: f5b4eb19-77f4-4c4a-945e-fcb8f9c5cf27
-langcode: en
+uuid: f3782ef1-3764-4523-a0fb-63fe8f006d2a
+langcode: pl
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: XIYL1KF7ND2XQRa5AxvEcp8vgCN2kUGiuBNhCgxrPME
 id: views-ui
-label: 'View edit page'
+label: 'Strona edycji widoku.'
 module: views_ui
 routes:
   -
@@ -18,71 +18,71 @@ tips:
   views-main:
     id: views-main
     plugin: text
-    label: 'Manage view settings'
+    label: 'Zarządzaj ustawieniami widoku.'
     weight: 1
-    body: 'View or edit the configuration.'
+    body: 'Pokaż lub edytuj konfigurację.'
   views-ui-displays:
     id: views-ui-displays
     plugin: text
-    label: 'Displays in this view'
+    label: 'Formaty wyświetlania dla tego widoku.'
     weight: 2
     selector: '#views-display-top'
-    body: 'A display is a way of outputting the results, e.g., as a page or a block. A view can contain multiple displays, which are listed here. The active display is highlighted.'
+    body: 'Format wyświetlania znaczy tyle co sposób w jaki wyświetlone będą wyniki, np. jako strona lub blok. Widok może posiadać więcej niż jeden format wyświetlania, które zostaną wyświetlone w tym miejscu. Aktywny format wyświetlania został wyróżniony.'
   views-ui-view-admin:
     id: views-ui-view-admin
     plugin: text
-    label: 'View administration'
+    label: 'Administracja widoku'
     weight: 3
     position: right
     selector: '#views-display-extra-actions'
-    body: 'Perform administrative tasks, including adding a description and creating a clone. Click the drop-down button to view the available options.'
+    body: 'Wykonaj czynności administracyjne, wliczając w sklonowanie tudzież dodanie opisu. Kliknij w przycisk rozwijania listy by zobaczyć wszystkie dostępne opcje.'
   views-ui-format:
     id: views-ui-format
     plugin: text
-    label: 'Output format'
+    label: 'Format wyjściowy'
     weight: 4
     selector: .views-ui-display-tab-bucket.format
-    body: 'Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal''s base functionality.'
+    body: 'Wybierz w jaki sposób mają zostać zaprezentowane wyniki. Np. wybierz <em>Zawartość</em> by wyświetlić każdą pozycję w całości, korzystając z własnych ustawień konfiguracji wyświetlania. Możesz również wybrać <em>Pola</em> które pozwolą Ci zaprezentować jedynie wybrane przez Ciebie pola. Poprzez zainstalowanie modułów można <em>rozszerzyć</em> podstawową funkcjonalność Drupala o dodatkowe formaty.'
   views-ui-fields:
     id: views-ui-fields
     plugin: text
-    label: Fields
+    label: Pola
     weight: 5
     selector: .views-ui-display-tab-bucket.field
-    body: 'If this view uses fields, they are listed here. You can click on a field to configure it.'
+    body: 'Jeśli widok korzysta z pól, zostaną one zaprezentowane w tym miejscu. Możesz kliknąć w pole aby je skonfigurować.'
   views-ui-filter:
     id: views-ui-filter
     plugin: text
-    label: 'Filter your view'
+    label: 'Przefiltruj swój widok'
     weight: 6
     selector: .views-ui-display-tab-bucket.filter
-    body: 'Add filters to limit the results in the output. E.g., to only show content that is <em>published</em>, you would add a filter for <em>Published</em> and select <em>Yes</em>.'
+    body: 'Dodaj filtry aby ograniczyć wyniki, np. by pokazać jedynie zawartość która jest <em>opublikowana</em> należy dodać filtr <em>Opublikowane</em> i wybrać <em>Tak</em>.'
   views-ui-filter-operations:
     id: views-ui-filter-operations
     plugin: text
-    label: 'Filter actions'
+    label: 'Przefiltruj akcje'
     weight: 7
     selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
-    body: 'Add, rearrange or remove filters.'
+    body: 'Dodaj, uporządkuj lub usuń filtry.'
   views-ui-sorts:
     id: views-ui-sorts
     plugin: text
-    label: 'Sort Criteria'
+    label: 'Kryteria sortowania'
     weight: 8
     selector: .views-ui-display-tab-bucket.sort
-    body: 'Control the order in which the results are output. Click on an active sort rule to configure it.'
+    body: 'Zarządzaj kolejnością w jakiej wyświetlane są wyniki. Kliknij w aktywną regułę by ją skonfigurować.'
   views-ui-sorts-operations:
     id: views-ui-sorts-operations
     plugin: text
-    label: 'Sort actions'
+    label: 'Akcje sortowania'
     weight: 9
     selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
-    body: 'Add, rearrange or remove sorting rules.'
+    body: 'Dodaj, uporządkuj lub usuń regułę sortowania.'
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: Preview
+    label: Podgląd
     weight: 10
     position: right
     selector: '#preview-submit'
-    body: 'Show a preview of the view output.'
+    body: 'Pokaż podgląd widoku.'

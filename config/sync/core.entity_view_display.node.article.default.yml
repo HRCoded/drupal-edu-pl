@@ -1,17 +1,15 @@
-uuid: 6b994dac-c5a3-4052-89fd-1081c2db48ae
-langcode: en
+uuid: 22714765-7bd9-41d5-abb8-4a4f62b2c1f6
+langcode: pl
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
-    - field.field.node.article.comment
+    - field.field.node.article.field_author
+    - field.field.node.article.field_category
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.large
     - node.type.article
   module:
-    - comment
     - image
     - text
     - user
@@ -29,29 +27,39 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  comment:
-    type: comment_default
-    label: above
+  field_author:
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      view_mode: default
-      pager_id: 0
+      view_mode: author_overview
+      link: false
     third_party_settings: {  }
-    weight: 110
+    weight: 102
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 101
     region: content
   field_image:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: large
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: -1
     region: content
   field_tags:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 10
     region: content
@@ -60,4 +68,10 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+  reading_time:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

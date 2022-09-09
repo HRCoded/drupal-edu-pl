@@ -1,5 +1,5 @@
-uuid: 3eba0cbd-e1db-4cf5-925c-97295a93720d
-langcode: en
+uuid: 66639889-0ba0-466e-aec6-1a2c029e1c41
+langcode: pl
 status: true
 dependencies:
   config:
@@ -12,9 +12,9 @@ id: node.article.field_tags
 field_name: field_tags
 entity_type: node
 bundle: article
-label: Tags
-description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
-required: false
+label: Tagi
+description: 'Wprowadź listę oddzielonych przecinkami słów. Przykładowo: Wrocław, Mexico City, "Cleveland, Ohio"'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -25,5 +25,7 @@ settings:
       tags: tags
     sort:
       field: _none
+      direction: asc
     auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference

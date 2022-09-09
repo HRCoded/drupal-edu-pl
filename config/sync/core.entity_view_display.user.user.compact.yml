@@ -1,9 +1,12 @@
-uuid: 924a08e3-f6c4-4895-847d-14c1061624f7
-langcode: en
+uuid: e1c072b9-ed86-4773-9f20-891a208ea85b
+langcode: pl
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_name
+    - field.field.user.user.field_position
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -22,8 +25,14 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_bio: true
+  field_name: true
+  field_position: true
+  langcode: true
   member_for: true

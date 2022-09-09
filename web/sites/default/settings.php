@@ -220,7 +220,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = '/config/sync';
+$settings['config_sync_directory'] = realpath(DRUPAL_ROOT . '/../config/sync');
 
 /**
  * Settings:
@@ -809,7 +809,7 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Driver\\Database\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_tp3_Rd-utK2MtqwX7GT0-HJNmaNvUReTaO85Ti6OQv_Frj2Rkc4jmHAoeN-AW2VAajfR9JNa3A/sync';
+//$settings['config_sync_directory'] = 'sites/default/files/config_tp3_Rd-utK2MtqwX7GT0-HJNmaNvUReTaO85Ti6OQv_Frj2Rkc4jmHAoeN-AW2VAajfR9JNa3A/sync';
 
 if (isset($GLOBALS['request']) and
 '/web/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME')) {

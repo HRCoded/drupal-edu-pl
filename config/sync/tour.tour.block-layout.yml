@@ -1,5 +1,5 @@
-uuid: e6737bb2-72d8-4e96-bb35-c64291e064c6
-langcode: en
+uuid: 2f45d229-c82a-4155-96fc-834297bac4e2
+langcode: pl
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: DI2aQ7IbaYrwUfiwSn-3g-ANh_t7LzQ1JkRqd1ujgFs
 id: block-layout
-label: 'Block Layout Page'
+label: 'Strona układu bloków'
 module: block
 routes:
   -
@@ -16,33 +16,33 @@ tips:
   block-layout:
     id: block-layout
     plugin: text
-    label: 'Block Layout'
+    label: 'Układ bloków'
     weight: 1
     body: 'Blocks are boxes of content rendered into an area, or region, of a web page that can be displayed in regions (such as footer or sidebar) on your page.'
   place-block:
     id: place-block
     plugin: text
-    label: 'Place Blocks'
+    label: 'Rozmieszczanie Bloków (Place Blocks)'
     weight: 2
     selector: .button--small
     body: 'Any custom or contributed block can be added to a particular region by clicking on a button Place block. A new block can also be created by clicking on Place Block'
   block-region:
     id: block-region
     plugin: text
-    label: 'Block Region'
+    label: 'Region bloku'
     weight: 3
     selector: .block-region-select
     body: 'Assign or change the region of a block by clicking here. A dropdown list with all the regions will appear.You can place one block in multiple regions.'
   configure-block:
     id: configure-block
     plugin: text
-    label: 'Configure Block'
+    label: 'Konfiguruj Blok'
     weight: 4
     selector: .dropbutton-widget
     body: 'By Clicking on "Configure" you can go ahead and edit the contents of the block, deal with the visibility settings and even change the placement of where it is on your theme.'
   custom-block-library:
     id: custom-block-library
     plugin: text
-    label: 'Custom Block Library'
+    label: 'Biblioteka własnych bloków'
     weight: 5
     body: 'The block management screen also has an another tab on the top which is used to add Custom blocks. The name of the tab is "Custom block library". This tab ultimately provides a link to add custom blocks.'
