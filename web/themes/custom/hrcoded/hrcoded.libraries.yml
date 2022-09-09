@@ -1,8 +1,7 @@
 global-styling:
   css:
     theme:
-      css/my.css: {}
-#      css/style.css: {}
+      css/style.css: {}
 
 highlightjs:
   js:

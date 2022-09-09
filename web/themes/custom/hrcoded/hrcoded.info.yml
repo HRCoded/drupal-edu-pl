@@ -1,6 +1,6 @@
-name: HRcoded
+name: HRCoded
 type: theme
-description: 'HRcoded subtheme based on Bootstrap 5 theme.'
+description: 'HRCoded subtheme based on Bootstrap 5 theme.'
 core_version_requirement: '^9.2 || ^10'
 'base theme': bootstrap5
 libraries:
@@ -11,10 +11,7 @@ stylesheets-remove:
   - '@bootstrap5/css/style.css'
 regions:
   header: Header
-#  nav_branding: 'Navigation branding region'
   nav_main: 'Main navigation region'
-#  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
-#  breadcrumb: Breadcrumbs
   content: 'Main content'
   sidebar: 'Sidebar'
   footer: Footer
