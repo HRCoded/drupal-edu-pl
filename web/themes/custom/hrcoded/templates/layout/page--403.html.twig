@@ -42,51 +42,15 @@
  * @see html.html.twig
  */
 #}
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary hrc-border-bottom">
-  <div class="container">
-    <a href="{{ path('<front>') }}">
-      <img height="40" src="{{ '/' ~ directory ~ '/assets/logo-dark.svg' }}"  alt="HRCoded logo">
-    </a>
-
-    {{ page.nav_main }}
-  </div>
-</nav>
-
-{% if page.header %}
-  <header>
-    {{ page.header }}
-  </header>
-{% endif %}
-
-{% if page.sidebar %}
-  <div class="pt-5 pb-3 border-bottom d-xl-none">
-    <div class="container">
-        {{ page.sidebar }}
-    </div>
-  </div>
-{% endif %}
+{% extends "@hrcoded/layout/page.html.twig" %}
 
 {% block content %}
   <div class="container my-5">
-    <div class="row flex-column-reverse flex-xl-row{{ not page.sidebar ? ' justify-content-center' }}">
-      <div class="col-xl-8">
-        {{ page.content }}
+    <div class="row flex-column-reverse flex-xl-row justify-content-center">
+      <div class="col-xl-8 text-center">
+        <h1 class="fs-10 hrc-font-family-2">{{ '403'|t }}</h1>
+        <p class="fs-5 mt-3">{{ 'Access denied'|t }}</p>
       </div>
-      {% if page.sidebar %}
-        <div class="col-lg-4 d-none d-xl-block">
-          {{ page.sidebar }}
-        </div>
-      {% endif %}
     </div>
   </div>
 {% endblock %}
-
-<footer class="mt-auto py-5 bg-dark {{ footer_classes }}">
-  <div class="container">
-    <p class="m-0 text-center text-white">
-      {{ page.footer }}
-      {{ 'Copyright &copy; HRCoded 2022'|t }}
-    </p>
-  </div>
-</footer>
