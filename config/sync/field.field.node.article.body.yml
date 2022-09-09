@@ -1,5 +1,5 @@
-uuid: f0f174f2-9f82-48cf-a92b-b1834e8db7a5
-langcode: en
+uuid: f75ebbfa-bd70-4716-8558-7b900780c348
+langcode: pl
 status: true
 dependencies:
   config:
@@ -13,13 +13,13 @@ id: node.article.body
 field_name: body
 entity_type: node
 bundle: article
-label: Body
+label: Treść
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   display_summary: true
-  required_summary: false
+  required_summary: true
 field_type: text_with_summary

@@ -1,14 +1,14 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
-langcode: en
-uuid: f544012b-82d3-4cc1-aafb-813a2675422d
-name: 'Drupal Edu'
-mail: hrcoded@gmail.com
+langcode: pl
+uuid: 1cd59f83-0a09-4b3d-ac82-1dfee62ad9d6
+name: 'HRCoded EDU'
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: en
+default_langcode: pl

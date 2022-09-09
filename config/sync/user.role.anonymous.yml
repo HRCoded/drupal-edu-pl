@@ -1,5 +1,5 @@
-uuid: 5c8f637c-b544-4193-9d62-407b47b18815
-langcode: en
+uuid: 1383fb07-0a2d-4c0e-89fa-70bdb410efe6
+langcode: pl
 status: true
 dependencies:
   config:
@@ -13,12 +13,13 @@ dependencies:
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
-label: 'Anonymous user'
+label: 'Użytkownik anonimowy'
 weight: 0
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'access user profiles'
   - 'search content'
   - 'use text format restricted_html'
