@@ -1,0 +1,31 @@
+uuid: fa753df8-324d-4aa3-bae2-54c9ec0742e6
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.link
+    - field.field.block_content.link.field_label
+    - field.field.block_content.link.field_url
+id: block_content.link.default
+targetEntityType: block_content
+bundle: link
+mode: default
+content:
+  field_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

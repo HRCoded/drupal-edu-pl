@@ -1,0 +1,22 @@
+uuid: 42519dfb-b8f9-43af-a623-521e1a2c9bf8
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - hrcoded
+_core:
+  default_config_hash: 22AvdZ4WhpkotuwmCxnAKIa_4W6AGyhJqyy9PDPE84g
+id: hrcoded_local_tasks
+theme: hrcoded
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Zakładki
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

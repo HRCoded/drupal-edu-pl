@@ -1,0 +1,30 @@
+uuid: 7878168d-fa7e-42b3-8912-23d3e55f0a7d
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:image_jumbotron:c6be7423-7656-4486-9be7-4fb726a0c0ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - hrcoded
+id: frontpagejumbotron
+theme: hrcoded
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:c6be7423-7656-4486-9be7-4fb726a0c0ff'
+settings:
+  id: 'block_content:c6be7423-7656-4486-9be7-4fb726a0c0ff'
+  label: 'Frontpage jumbotron'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,28 @@
+uuid: 8d7b2d62-c26e-4976-afb3-655a392db494
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+  theme:
+    - hrcoded
+id: pagetitle
+theme: hrcoded
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      categories: categories
+      tags: tags

@@ -1,0 +1,29 @@
+uuid: 5701e533-5820-45c0-8ae1-11e1fb1b347d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories_sidebar
+  module:
+    - system
+    - views
+  theme:
+    - hrcoded
+id: views_block__categories_sidebar_block_1
+theme: hrcoded
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:categories_sidebar-block_1'
+settings:
+  id: 'views_block:categories_sidebar-block_1'
+  label: Kategorie
+  label_display: visible
+  provider: views
+  views_label: Kategorie
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

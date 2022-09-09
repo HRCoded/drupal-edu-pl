@@ -1,0 +1,22 @@
+uuid: 1f5d66d2-46f6-4aa7-8770-1168010e7fd7
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hrcoded
+_core:
+  default_config_hash: GoP2OBRqrJ8aUAek3_KZL4aIe5fx3QIgNMDsdiKvmTw
+id: hrcoded_messages
+theme: hrcoded
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Wiadomości
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,51 @@
+uuid: 6d394073-442f-4df7-93b0-2a516b6d91b8
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.image_jumbotron
+    - field.field.block_content.image_jumbotron.field_image
+    - field.field.block_content.image_jumbotron.field_subtitle
+    - field.field.block_content.image_jumbotron.field_title
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.image_jumbotron.default
+targetEntityType: block_content
+bundle: image_jumbotron
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

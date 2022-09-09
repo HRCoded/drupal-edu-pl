@@ -1,0 +1,34 @@
+uuid: 9f8bae91-e871-42a4-b69e-b69b281aae82
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.small_teaser
+    - image.style.thumbnail
+  theme:
+    - hrcoded
+id: article_teaser
+label: 'Article teaser'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: small_teaser
+    breakpoint_id: hrcoded.screen.sm-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: small_teaser
+    breakpoint_id: hrcoded.screen.sm-min
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: hrcoded.screen.xs-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: hrcoded.screen.xs-max
+    multiplier: 2x
+breakpoint_group: hrcoded.screen
+fallback_image_style: small_teaser

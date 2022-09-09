@@ -1,0 +1,14 @@
+uuid: daf636ef-e631-4806-806b-fb3a11a85ea5
+langcode: pl
+status: true
+dependencies:
+  module:
+    - user
+id: users
+label: Users
+type: 'canonical_entities:user'
+pattern: '/autor/[user:field_name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
