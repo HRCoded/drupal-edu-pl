@@ -1987,10 +1987,6 @@
             ],
             "authors": [
                 {
-                    "name": "TravisCarden",
-                    "homepage": "https://www.drupal.org/user/236758"
-                },
-                {
                     "name": "acquia",
                     "homepage": "https://www.drupal.org/user/1231722"
                 },
@@ -2001,6 +1997,10 @@
                 {
                     "name": "effulgentsia",
                     "homepage": "https://www.drupal.org/user/78040"
+                },
+                {
+                    "name": "TravisCarden",
+                    "homepage": "https://www.drupal.org/user/236758"
                 }
             ],
             "description": "MySQL 5.6 Driver for Drupal 9.",
