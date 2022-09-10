@@ -1,0 +1,15 @@
+uuid: b720d9d5-1ec6-41dc-ac89-ca2631ac76fb
+langcode: pl
+status: true
+dependencies: {  }
+name: small_x2
+label: 'Small x2 (200x200)'
+effects:
+  165bd2cf-dd7b-4cac-8092-e1c90574fde3:
+    uuid: 165bd2cf-dd7b-4cac-8092-e1c90574fde3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center
