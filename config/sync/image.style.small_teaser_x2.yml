@@ -1,0 +1,15 @@
+uuid: cbe92e2d-60fb-4e93-9f95-2747c33515a7
+langcode: pl
+status: true
+dependencies: {  }
+name: small_teaser_x2
+label: 'Small teaser x2 (400x268)'
+effects:
+  f2c43a3e-2188-4cd4-826b-2724270870f0:
+    uuid: f2c43a3e-2188-4cd4-826b-2724270870f0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 268
+      anchor: center-center

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - image.style.small_teaser
+    - image.style.small_teaser_x2
+    - image.style.small_x2
     - image.style.thumbnail
   theme:
     - hrcoded
@@ -17,7 +19,7 @@ image_style_mappings:
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: small_teaser
+    image_mapping: small_teaser_x2
     breakpoint_id: hrcoded.screen.sm-min
     multiplier: 2x
   -
@@ -27,7 +29,7 @@ image_style_mappings:
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: thumbnail
+    image_mapping: small_x2
     breakpoint_id: hrcoded.screen.xs-max
     multiplier: 2x
 breakpoint_group: hrcoded.screen
