@@ -5,8 +5,8 @@ global-styling:
 
 highlightjs:
   js:
-    dist/highlightjs/highlightjs.min.js: {}
+    lib/highlightjs/highlightjs.min.js: {}
     js/highlightjs-init.js: {}
   css:
     theme:
-      dist/highlightjs/highlightjs.min.css: {}
+      lib/highlightjs/highlightjs.min.css: {}
