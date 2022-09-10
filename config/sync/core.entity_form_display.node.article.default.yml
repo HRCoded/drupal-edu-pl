@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_author
     - field.field.node.article.field_category
     - field.field.node.article.field_image
+    - field.field.node.article.field_meta_image
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -60,6 +61,14 @@ content:
   field_image:
     type: image_image
     weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_meta_image:
+    type: image_image
+    weight: 27
     region: content
     settings:
       progress_indicator: throbber
