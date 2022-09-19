@@ -11951,7 +11951,8 @@ div.badge.hrc-category-badge {
 .hrc-article .h6,
 .hrc-article ul,
 .hrc-article a,
-.hrc-article p {
+.hrc-article p,
+.hrc-article figcaption {
   font-family: Merriweather, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .hrc-article p,
@@ -11960,6 +11961,15 @@ div.badge.hrc-category-badge {
 }
 .hrc-article pre {
   border-radius: 10px;
+}
+.hrc-article img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hrc-article figcaption {
+  text-align: center;
+  font-size: 13px;
 }
 
 .hrc-article-header {
